@@ -119,59 +119,67 @@
 
           <div class="timeline-item card">
             <div class="timeline-header">
-              <h3>FBG 导针三维实时形状感知</h3>
-              <span class="timeline-date">2024.12 — 2025.07</span>
+              <h3>面向机器人操作的部件感知可供性学习</h3>
+              <span class="timeline-date">2025.08 - 2025.12</span>
+            </div>
+            <p class="timeline-org">项目成员</p>
+            <ul>
+              <li>面向机器人操作中物体可供性（affordance）理解问题，构建基于 PartNet-Mobility 数据集的部件级可供性学习框架，通过融合视觉与语言信息，实现机器人对细粒度功能区域的识别能力。</li>
+              <li>基于 Blender Python API 搭建多视角数据生成流水线，对 3D 物体进行标准化处理与多角度渲染，生成 RGB 图像及对应的部件级语义分割图，并构建 part-level 标注映射关系用于监督学习。</li>
+              <li>参与设计基于大语言模型的可供性描述生成方法，从物体部件层级结构自动生成自然语言动作描述，并构建"动作-部件"映射关系，实现弱监督可供性标签生成。</li>
+              <li>参与设计从分割图到可供性热力图（affordance heatmap）的自动生成流程，通过融合多部件 mask 生成空间分布标签，用于训练语言条件下的可供性预测模型。</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item card">
+            <div class="timeline-header">
+              <h3>基于 FBG 的 3D 实时光纤传感针形状感知</h3>
+              <span class="timeline-date">2024.12 - 2025.07</span>
             </div>
             <p class="timeline-org">
+              项目负责人 ·
               <a href="https://amiro.lcsr.jhu.edu/" target="_blank">高级医疗仪器与机器人研究实验室</a>
               · 约翰斯·霍普金斯大学
             </p>
-            <p><strong>目标：</strong>为基于光纤布拉格光栅（FBG）的导针开发实时三维形状感知系统，实现微创手术中无图像的精准针头追踪。</p>
-            <p><strong>成果：</strong>在多次机器人插入实验中 RMSE &lt; 1.3 mm；通过立体视觉对比流水线验证感知精度，支持未来自主针头转向研究。</p>
             <ul>
-              <li>构建 API 驱动的光谱处理流水线，拟合谱峰并与厂商自动拟合结果交叉验证</li>
-              <li>将 FBG 输入通道从 4 扩展至 7，并优化基于李群的三维重建算法，在仿体组织实验中精度达 &lt; 2.0 mm</li>
-              <li>设计对比流水线，通过配准立体相机三维重建与 FBG 感知结果来量化插入形状精度</li>
+              <li>面向 MRI 环境中的辅助穿刺需求，搭建基于光纤光栅（FBG）的柔性针形状感知系统，利用李群模型重建针体沿其长度的曲率和扭转。</li>
+              <li>构建基于 TCP 流的光谱处理方法，接入 FBG 解调仪的逐次扫描输出，进行谱峰拟合，并与厂商自动拟合波峰结果交叉验证。</li>
+              <li>完成 FBG 与光学解调器的配置与校准流程设计，将 FBG 输入通道由 4 扩展至 7，优化基于李群的重建算法，在仿体组织实验中实现 &lt;2.0 mm 针尖误差精度。</li>
+              <li>开发基于 ROS2 的穿刺针插入机器人操作系统，利用开源协作机器人工具包（CRTK）实现穿刺深度精确控制，多次插入实验 RMSE &lt; 2 mm。</li>
+              <li>设计双目相机验证平台，利用 OpenCV 实现针在不同插入状态下的三维形态重建与可视化，用于验证和评估基于 FBG 重建的针形状曲线。</li>
             </ul>
           </div>
 
           <div class="timeline-item card">
             <div class="timeline-header">
-              <h3>振动驱动胶囊机器人</h3>
-              <span class="timeline-date">2023.01 — 2023.12</span>
+              <h3>振动驱动胶囊机器人设计与性能验证</h3>
+              <span class="timeline-date">2023.01 - 2023.12</span>
             </div>
             <p class="timeline-org">
-              深圳仿生机器人与智能系统重点实验室
-            </p>
-            <p>
-              开发了一种带突出磁性刚毛的振动驱动胶囊机器人（VCR），增强了其在湿/干环境下的适应性，用于胃肠道诊断。
-              发表于 <a href="https://ieeexplore-ieee-org.proxy1.library.jhu.edu/document/10354617" target="_blank">2023 IEEE ROBIO</a>。
+              项目负责人 · 深圳仿生机器人与智能系统重点实验室 ·
+              <a href="https://ieeexplore-ieee-org.proxy1.library.jhu.edu/document/10354617" target="_blank">2023 IEEE ROBIO</a>
             </p>
             <ul>
-              <li>机器人系统设计：利用 SolidWorks 3D 打印并优化磁驱动振动胶囊机器人机械结构</li>
-              <li>实验测试与运动分析：搭建基于相机的实时跟踪系统，使用 OpenCV 和 MATLAB 分析轨迹、速度与控制精度</li>
-              <li>功能测试与验证：通过力传感器和示波器测量力与振动特性，基于实时传感器反馈优化系统性能</li>
+              <li>设计面向结肠道检查的欠驱动振动微小型自主机器人，在有限环境限制下实现多自由度控制及运动。</li>
+              <li>搭建振动电机测试平台，开展力传感器的多档输出测试，完成输出力的力学建模与分析，为后续电机输出控制运动提供理论基础。</li>
+              <li>搭建基于 STM32 开发板的电机控制模块，完成电机驱动模块的软件编程，实现速度控制。</li>
+              <li>优化基于 MATLAB 的摄像头实时追踪系统，采集并分析机器人速度、方向稳定性与控制精度，实现对运动性能的评估与优化。</li>
             </ul>
           </div>
 
           <div class="timeline-item card">
             <div class="timeline-header">
-              <h3>基于深度感知的履带式结肠内镜机器人</h3>
-              <span class="timeline-date">2022.05 — 2024.04</span>
+              <h3>履带驱动结肠镜机器人及自主导航</h3>
+              <span class="timeline-date">2022.01 - 2023.01</span>
             </div>
             <p class="timeline-org">
-              深圳仿生机器人与智能系统重点实验室
-            </p>
-            <p>
-              利用计算机视觉检测结肠深度，实现履带式结肠内镜机器人的自主导航。
-              成果发表于 <a href="https://ieeexplore-ieee-org.proxy1.library.jhu.edu/abstract/document/10611617/metrics#metrics" target="_blank">2024 IEEE ICRA</a>，
-              并获得 <a href="https://drive.google.com/file/d/1wP5rVrGjg81T0pr2UmWpJwYO9Kx1xF4H/view?usp=sharing" target="_blank">专利</a>。
+              项目参与者 · 深圳仿生机器人与智能系统重点实验室 ·
+              <a href="https://ieeexplore-ieee-org.proxy1.library.jhu.edu/abstract/document/10611617/metrics#metrics" target="_blank">2024 IEEE ICRA</a> ·
+              <a href="https://drive.google.com/file/d/1wP5rVrGjg81T0pr2UmWpJwYO9Kx1xF4H/view?usp=sharing" target="_blank">专利</a>
             </p>
             <ul>
-              <li>运动规划与控制：设计基于贝塞尔曲线的轨迹优化算法，绕过结肠袋折皱并避免碰撞</li>
-              <li>机械设计与驱动：使用 SolidWorks 优化蜗轮蜗杆传动机构，提升结肠内推进效率</li>
-              <li>立体视觉深度感知：利用 OpenCV 和 MATLAB 开发深度估计算法，结肠袋检测精度达 88.11%</li>
-              <li>实验验证：在离体猪肠中搭建实时运动分析测试平台</li>
+              <li>面向结肠非结构化、弱纹理、弱空间感知环境，构建微小型履带机器人硬件系统，结合深度信息开发路径规划算法，实现肠道内内窥镜自主导航。</li>
+              <li>使用两个微型单目相机搭建双目系统，通过贝塞尔曲线轨迹规划算法与 OpenCV 深度估计模块，根据皱襞几何特征判断移动方向，结肠褶皱检测精度达 88.11%。</li>
             </ul>
           </div>
 
