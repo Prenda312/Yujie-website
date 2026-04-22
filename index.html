@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>张玉洁 · 个人简历</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <nav class="navbar">
+    <span class="nav-name">张玉洁</span>
+    <div class="nav-links">
+      <a href="#about">关于我</a>
+      <a href="#experience">工作经历</a>
+      <a href="#research">科研经历</a>
+      <a href="#projects">项目</a>
+      <a href="#skills">技能</a>
+      <a href="#contact">联系</a>
+    </div>
+  </nav>
+
+  <!-- 英雄区 -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>张玉洁 <span class="en-name">Yujie Zhang</span></h1>
+      <p class="hero-subtitle">约翰斯·霍普金斯大学 · 机械工程硕士在读</p>
+      <p class="hero-tagline">机器人 · 计算机视觉 · 智能控制</p>
+      <div class="hero-actions">
+        <a href="mailto:yzhan766@jh.edu" class="btn btn-primary">📬 发送邮件</a>
+        <a href="https://www.linkedin.com/in/yzhang312" target="_blank" class="btn btn-outline">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 关于我 -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">😎 关于我</h2>
+        <div class="card about-card">
+          <p>
+            你好！我是张玉洁（英文名 Prenda）——约翰斯·霍普金斯大学机械工程硕士在读生，
+            研究方向聚焦于<strong>机器人学、计算机视觉与智能控制</strong>的交叉领域。
+          </p>
+          <p>
+            我的学术与科研历程始终围绕解决医疗及仿生机器人领域的复杂问题。
+            擅长图像处理、运动控制算法设计，以及基于 ROS 的机器人系统集成。
+            在过往项目中，我曾利用立体视觉与 OpenCV 构建实时深度估计系统，
+            基于贝塞尔曲线为自主导航开发轨迹规划算法，
+            并搭建完整的 ROS 传感器融合与可视化流水线。
+          </p>
+          <p>
+            目前，我正在研究基于光纤布拉格光栅（FBG）的手术工具形状感知课题，
+            使用 Python 与 ROS、3D Slicer 进行高频数据采集与实时三维可视化控制。
+            我热衷于将鲁棒控制策略与智能感知相结合，构建能在非结构化环境中可靠运作的系统。
+          </p>
+          <p>
+            我也热爱开放协作与跨学科问题求解——如果你正在做有趣的事情，欢迎与我联系！💫
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 工作经历 -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">💻 工作经历</h2>
+        <div class="timeline">
+          <div class="timeline-item card">
+            <div class="timeline-header">
+              <h3>机器人软件工程实习生</h3>
+              <span class="timeline-date">2024年夏</span>
+            </div>
+            <p class="timeline-org">某机器人技术公司（详情请邮件咨询）</p>
+            <ul>
+              <li>参与 ROS2 框架下机器人运动控制模块的开发与调试</li>
+              <li>负责传感器数据融合与实时状态估计算法的实现</li>
+              <li>协助完成系统集成测试与性能基准评估</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 科研经历 -->
+    <section id="research" class="section">
+      <div class="container">
+        <h2 class="section-title">📋 科研经历</h2>
+        <div class="timeline">
+
+          <div class="timeline-item card">
+            <div class="timeline-header">
+              <h3>FBG 导针三维实时形状感知</h3>
+              <span class="timeline-date">2024.12 — 2025.07</span>
+            </div>
+            <p class="timeline-org">
+              <a href="https://amiro.lcsr.jhu.edu/" target="_blank">高级医疗仪器与机器人研究实验室</a>
+              · 约翰斯·霍普金斯大学
+            </p>
+            <p><strong>目标：</strong>为基于光纤布拉格光栅（FBG）的导针开发实时三维形状感知系统，实现微创手术中无图像的精准针头追踪。</p>
+            <p><strong>成果：</strong>在多次机器人插入实验中 RMSE &lt; 1.3 mm；通过立体视觉对比流水线验证感知精度，支持未来自主针头转向研究。</p>
+            <ul>
+              <li>构建 API 驱动的光谱处理流水线，拟合谱峰并与厂商自动拟合结果交叉验证</li>
+              <li>将 FBG 输入通道从 4 扩展至 7，并优化基于李群的三维重建算法，在仿体组织实验中精度达 &lt; 2.0 mm</li>
+              <li>设计对比流水线，通过配准立体相机三维重建与 FBG 感知结果来量化插入形状精度</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item card">
+            <div class="timeline-header">
+              <h3>振动驱动胶囊机器人</h3>
+              <span class="timeline-date">2023.01 — 2023.12</span>
+            </div>
+            <p class="timeline-org">
+              深圳仿生机器人与智能系统重点实验室
+            </p>
+            <p>
+              开发了一种带突出磁性刚毛的振动驱动胶囊机器人（VCR），增强了其在湿/干环境下的适应性，用于胃肠道诊断。
+              发表于 <a href="https://ieeexplore-ieee-org.proxy1.library.jhu.edu/document/10354617" target="_blank">2023 IEEE ROBIO</a>。
+            </p>
+            <ul>
+              <li>机器人系统设计：利用 SolidWorks 3D 打印并优化磁驱动振动胶囊机器人机械结构</li>
+              <li>实验测试与运动分析：搭建基于相机的实时跟踪系统，使用 OpenCV 和 MATLAB 分析轨迹、速度与控制精度</li>
+              <li>功能测试与验证：通过力传感器和示波器测量力与振动特性，基于实时传感器反馈优化系统性能</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item card">
+            <div class="timeline-header">
+              <h3>基于深度感知的履带式结肠内镜机器人</h3>
+              <span class="timeline-date">2022.05 — 2024.04</span>
+            </div>
+            <p class="timeline-org">
+              深圳仿生机器人与智能系统重点实验室
+            </p>
+            <p>
+              利用计算机视觉检测结肠深度，实现履带式结肠内镜机器人的自主导航。
+              成果发表于 <a href="https://ieeexplore-ieee-org.proxy1.library.jhu.edu/abstract/document/10611617/metrics#metrics" target="_blank">2024 IEEE ICRA</a>，
+              并获得 <a href="https://drive.google.com/file/d/1wP5rVrGjg81T0pr2UmWpJwYO9Kx1xF4H/view?usp=sharing" target="_blank">专利</a>。
+            </p>
+            <ul>
+              <li>运动规划与控制：设计基于贝塞尔曲线的轨迹优化算法，绕过结肠袋折皱并避免碰撞</li>
+              <li>机械设计与驱动：使用 SolidWorks 优化蜗轮蜗杆传动机构，提升结肠内推进效率</li>
+              <li>立体视觉深度感知：利用 OpenCV 和 MATLAB 开发深度估计算法，结肠袋检测精度达 88.11%</li>
+              <li>实验验证：在离体猪肠中搭建实时运动分析测试平台</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 精选项目 -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">🚀 精选项目</h2>
+
+        <div class="project-motivation card">
+          <p>
+            我的研究终极目标是通过视觉信息处理与简单驱动机构相结合，实现机器人运动的精准导航。
+            目睹亲人承受胃肠道疾病与手术恢复之痛，我深切认识到精细手术机器人与外骨骼对改善医疗体验的重要性。
+            我立志设计出让手术更安全、更精准、更微创的医疗机器人。
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-card card">
+            <div class="project-header">
+              <h3>FBG 导针三维实时形状感知</h3>
+              <span class="project-tag">医疗机器人</span>
+            </div>
+            <p>基于 ROS2 平台，为光纤布拉格光栅导针构建实时三维形状感知系统，多次机器人插入实验 RMSE &lt; 1.3 mm。</p>
+            <div class="project-links">
+              <a href="https://amiro.lcsr.jhu.edu/" target="_blank">实验室主页 →</a>
+            </div>
+          </div>
+
+          <div class="project-card card">
+            <div class="project-header">
+              <h3>振动驱动胶囊机器人</h3>
+              <span class="project-tag">仿生机器人</span>
+            </div>
+            <p>带磁性刚毛的振动驱动胶囊机器人，适用于胃肠道诊断，兼容湿/干双环境。发表于 IEEE ROBIO 2023。</p>
+            <div class="project-links">
+              <a href="https://ieeexplore-ieee-org.proxy1.library.jhu.edu/document/10354617" target="_blank">论文 →</a>
+            </div>
+          </div>
+
+          <div class="project-card card">
+            <div class="project-header">
+              <h3>履带式结肠内镜机器人</h3>
+              <span class="project-tag">计算机视觉</span>
+            </div>
+            <p>结合立体视觉深度感知与贝塞尔曲线轨迹规划，实现结肠内自主导航，检测精度 88.11%。IEEE ICRA 2024。</p>
+            <div class="project-links">
+              <a href="https://ieeexplore-ieee-org.proxy1.library.jhu.edu/abstract/document/10611617/metrics#metrics" target="_blank">论文 →</a>
+              <a href="https://drive.google.com/file/d/1wP5rVrGjg81T0pr2UmWpJwYO9Kx1xF4H/view?usp=sharing" target="_blank">专利 →</a>
+              <a href="https://github.com/Prenda312/track-base-robot-CAD" target="_blank">CAD →</a>
+            </div>
+          </div>
+
+          <div class="project-card card">
+            <div class="project-header">
+              <h3>机器人毕加索</h3>
+              <span class="project-tag">运动控制</span>
+            </div>
+            <p>在 ME.456 机器人运动学与动力学控制课程中设计的绘图机器人，涵盖正逆运动学、轨迹规划与图像边缘检测。</p>
+            <div class="project-links">
+              <a href="https://github.com/Prenda312/Robot-Picasso-Project.git" target="_blank">GitHub →</a>
+            </div>
+          </div>
+
+          <div class="project-card card">
+            <div class="project-header">
+              <h3>精选 CAD 设计</h3>
+              <span class="project-tag">机械设计</span>
+            </div>
+            <p>履带式结肠内镜机器人 CAD（2023）、3D 打印机课程设计、SolidWorks 法拉利模型等。</p>
+            <div class="project-links">
+              <a href="https://github.com/Prenda312/track-base-robot-CAD" target="_blank">CAD GitHub →</a>
+              <a href="https://github.com/Prenda312/Mechanical-design-course-project.git" target="_blank">课程项目 →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 技能 & 课程 -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">⭐ 技能</h2>
+        <div class="skills-grid">
+          <div class="skill-group card">
+            <h3>编程语言</h3>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">C++</span>
+            </div>
+          </div>
+          <div class="skill-group card">
+            <h3>框架与工具</h3>
+            <div class="tags">
+              <span class="tag">ROS / ROS2</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Git</span>
+              <span class="tag">Gazebo</span>
+              <span class="tag">RViz</span>
+              <span class="tag">SolidWorks</span>
+              <span class="tag">CAD</span>
+            </div>
+          </div>
+          <div class="skill-group card">
+            <h3>系统能力</h3>
+            <div class="tags">
+              <span class="tag">实时控制</span>
+              <span class="tag">传感器融合</span>
+              <span class="tag">硬件/软件集成</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-title" style="margin-top:3rem;">✨ 相关课程</h2>
+        <div class="card">
+          <ul class="courses-list">
+            <li>基于传感器的机器人算法（A-）</li>
+            <li>磁驱动 MRI 兼容机器人（A+）</li>
+            <li>计算机集成外科（A+）</li>
+            <li>数据结构与算法分析（A）</li>
+            <li>机器学习（A-）</li>
+            <li>嵌入式机器人（A-）</li>
+            <li>机器人建模与控制（A-）</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系我 -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">📬 联系我</h2>
+        <div class="card contact-card">
+          <p>欢迎通过以下方式与我联系，期待共同探索机器人、医疗创新或任何有趣的想法！</p>
+          <div class="contact-links">
+            <a href="mailto:yzhan766@jh.edu" class="contact-item">
+              <span class="contact-icon">📧</span>
+              <span>yzhan766@jh.edu</span>
+            </a>
+            <a href="https://www.linkedin.com/in/yzhang312" target="_blank" class="contact-item">
+              <span class="contact-icon">🔗</span>
+              <span>linkedin.com/in/yzhang312</span>
+            </a>
+            <a href="https://github.com/Prenda312" target="_blank" class="contact-item">
+              <span class="contact-icon">💻</span>
+              <span>github.com/Prenda312</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 张玉洁 · Yujie Zhang · 约翰斯·霍普金斯大学</p>
+  </footer>
+
+</body>
+</html>
