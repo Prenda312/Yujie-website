@@ -64,7 +64,7 @@
               </p>
             </div>
             <figure class="about-photo-wrap">
-              <img src="picture/d7e493ae5b3b5c073eceeab2f190e4e.jpg" alt="张郁洁近期项目现场照片" class="about-photo" loading="lazy" />
+              <img src="picture/profile-project.jpg" alt="张郁洁近期项目现场照片" class="about-photo" loading="lazy" />
               <figcaption>近期项目展示现场</figcaption>
             </figure>
           </div>
@@ -141,7 +141,7 @@
 
           <div class="timeline-item card">
             <div class="timeline-header">
-              <h3>基于 FBG 的 3D 实时光纤传感针形状感知</h3>
+              <h3>基于 FBG 的 3D 实时光纤传感针形状感知（宫颈癌辅助治疗）</h3>
               <span class="timeline-date">2024.12 - 2025.07</span>
             </div>
             <p class="timeline-org">
@@ -149,12 +149,15 @@
               <a href="https://amiro.lcsr.jhu.edu/" target="_blank">高级医疗仪器与机器人研究实验室</a>
               · 约翰斯·霍普金斯大学
             </p>
+            <p><strong>项目目标：</strong>为基于光纤布拉格光栅（FBG）的导针开发实时三维形状感知系统，实现宫颈癌近距离放射治疗中导管精准无影像穿刺。</p>
+            <p><strong>课程背景：</strong>600.446 Advanced Computer Integrated Surgery II (Spring 2025)，团队：Yujie Zhang、Siddhi Date、Kayleigh Huk，导师：Dr. Iulian Iordachita、Jacynthe Francoeur。</p>
+            <p><strong>主要成果：</strong>完成 FBG 校准与验证实验，Mean Tip Error 1.05 ± 0.277 mm，Mean RMSE 0.472 ± 0.124 mm；通过立体视觉对比流水线与凝胶模型验证感知精度，支持未来自主针头转向研究。</p>
             <ul>
-              <li>面向 MRI 环境中的辅助穿刺需求，搭建基于光纤光栅（FBG）的柔性针形状感知系统，利用李群模型重建针体沿其长度的曲率和扭转。</li>
-              <li>构建基于 TCP 流的光谱处理方法，接入 FBG 解调仪的逐次扫描输出，进行谱峰拟合，并与厂商自动拟合波峰结果交叉验证。</li>
-              <li>完成 FBG 与光学解调器的配置与校准流程设计，将 FBG 输入通道由 4 扩展至 7，优化基于李群的重建算法，在仿体组织实验中实现 &lt;2.0 mm 针尖误差精度。</li>
-              <li>开发基于 ROS2 的穿刺针插入机器人操作系统，利用开源协作机器人工具包（CRTK）实现穿刺深度精确控制，多次插入实验 RMSE &lt; 2 mm。</li>
-              <li>设计双目相机验证平台，利用 OpenCV 实现针在不同插入状态下的三维形态重建与可视化，用于验证和评估基于 FBG 重建的针形状曲线。</li>
+              <li>面向 MRI 环保与宫颈癌手术穿刺需求，搭建基于光纤光栅（FBG）的 300mm 柔性多芯导针形状感知系统，采用李群模型重建针体沿其长度的曲率与扭转，7 个纤芯、14 个活跃区域、98 个传感点。</li>
+              <li>构建基于 TCP 流的 FBG 光谱处理方法，接入 FBG 解调仪逐次扫描输出，优化谱峰拟合算法，与厂商自动拟合结果交叉验证，确保信号稳定性（低标准差）。</li>
+              <li>完成 FBG 与光学解调器的配置、校准与验证流程设计，将 FBG 输入通道由 4 扩展至 7，采用加权最小二乘法确定校准矩阵，在 XZ/YZ 平面 0°/90° 旋转下验证精度，在仿体组织实验中实现 &lt;2.0 mm 针尖误差。</li>
+              <li>开发基于 ROS2 的穿刺针机器人操作系统，利用协作机器人工具包（CRTK）实现穿刺深度精确控制（150-220mm 插入深度），多次机器人插入实验 RMSE &lt; 2 mm，确保可重复性与可靠性。</li>
+              <li>设计双目立体相机验证平台，采用 ROS camera_calibration 进行 9×11 棋盘标定，实现针在不同插入状态下的三维形态重建与 B-spline 平滑，用于独立验证基于 FBG 重建针形状曲线的精度（2.0/2.5 1/m 管道验证误差 &lt; 1 mm）。</li>
             </ul>
           </div>
 
