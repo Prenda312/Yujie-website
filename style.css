@@ -308,6 +308,29 @@ ul li {
   margin-bottom: .8rem;
 }
 
+.project-media {
+  display: grid;
+  gap: .7rem;
+  margin-bottom: .9rem;
+}
+
+.project-image,
+.project-video {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #0f172a;
+  object-fit: cover;
+}
+
+.project-image {
+  max-height: 180px;
+}
+
+.project-video {
+  max-height: 220px;
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;
