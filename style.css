@@ -210,6 +210,32 @@ ul li {
   margin-bottom: 0;
 }
 
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.about-photo-wrap {
+  margin: 0;
+}
+
+.about-photo {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  display: block;
+}
+
+.about-photo-wrap figcaption {
+  margin-top: .45rem;
+  font-size: .82rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
 /* =====================
    时间线（工作 / 科研）
    ===================== */
@@ -451,6 +477,10 @@ ul li {
     padding: 2.5rem 1rem;
   }
   .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-layout {
     grid-template-columns: 1fr;
   }
 }
