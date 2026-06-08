@@ -337,6 +337,12 @@ ul li {
   margin-bottom: .8rem;
 }
 
+.project-card ul {
+  font-size: .86rem;
+  color: var(--text-muted);
+  margin-bottom: .9rem;
+}
+
 .project-media {
   display: grid;
   gap: .7rem;

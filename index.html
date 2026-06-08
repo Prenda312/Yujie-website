@@ -265,13 +265,20 @@
 
           <div class="project-card card">
             <div class="project-header">
-              <h3>Robot Picasso</h3>
-              <span class="project-tag">Robotics</span>
+              <h3>Robotics Picasso Drawing Robot</h3>
+              <span class="project-tag">Kinematics / Control</span>
             </div>
             <p>
-              Developed a drawing robot project with motion planning and control logic for translating visual input
-              into executable robot trajectories.
+              Designed and simulated an articulated-arm drawing robot for EECS 567 Robotics Modeling and Control.
+              The system converts picture contours or user-typed character strings into board-frame trajectories,
+              maps them into the robot workspace, and generates executable joint-space motion.
             </p>
+            <ul>
+              <li>Extracted single-connectivity image contours using Freeman Chain Code and applied contour smoothing before trajectory generation.</li>
+              <li>Planned board-frame drawing paths for pictures, uppercase/lowercase English letters, and Arabic numbers.</li>
+              <li>Implemented inverse kinematics, joint-space interpolation, forward kinematics validation, and joint angle/acceleration analysis.</li>
+              <li>Designed a hybrid trajectory/force control strategy to keep the pen perpendicular to the palette while drawing.</li>
+            </ul>
             <div class="project-links">
               <a href="https://github.com/Prenda312/Robot-Picasso-Project.git" target="_blank">GitHub -></a>
             </div>
