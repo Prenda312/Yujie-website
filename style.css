@@ -88,6 +88,14 @@ ul li {
   text-decoration: none;
 }
 
+.language-link {
+  color: var(--primary) !important;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  padding: .12rem .65rem;
+  background: #fff;
+}
+
 /* =====================
    英雄区
    ===================== */
