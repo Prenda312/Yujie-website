@@ -214,7 +214,8 @@
         <div class="projects-grid">
           <div class="project-card card">
             <div class="project-header">
-              <h3>3D Reconstruction with NeRF</h3>
+              <h3>Video-to-NeRF Vest 3D Reconstruction</h3>
+              <span class="project-tag">Computer Vision / NeRF</span>
               <span class="project-tag">计算机视觉 / AI</span>
             </div>
 
@@ -231,7 +232,14 @@
               使用多视角数据实现 novel view synthesis，PSNR ≈ 31 dB，支持新视角渲染与质量评估。
             </p>
 
+            <p>
+              Built a monocular video-to-NeRF reconstruction pipeline for a vest object. Extracted 215 frames from video,
+              estimated camera poses with COLMAP, trained a neural 3D representation using NVIDIA Instant-NGP, and exported
+              trained snapshots plus RGBA volume slices for visual inspection and portfolio documentation.
+            </p>
+
             <div class="project-links">
+              <a href="https://github.com/Prenda312/vest-nerf-3d-reconstruction" target="_blank">GitHub →</a>
               <a href="video/nerf-demo.mp4" target="_blank">演示视频 →</a>
             </div>
           </div>
